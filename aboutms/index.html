@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ABOUT MS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="../logoms.png" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="image-box">
+        <img src="../logoms.png" alt="" />
+      </div>
+      <div class="accordion-text">
+        <div class="title">ABOUT MAJELIS SEMARANG</div>
+        <ul class="faq-text">
+          <li>
+            <div class="question-arrow">
+              <span class="question">Apa Itu Majelis Semarang?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>
+              Majelis Semarang Adalah Media Penyebaran Informasi Jadwal Dan
+              Kegiatan Pengajian / Majelis Di Wilayah Semarang
+            </p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">Latar Belakang</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>
+              Kesuburan Kegiatan Majelis Wilayah Semarang Sangat Luar Biasa
+              Mulai Dari Tingkat Desa Sampai Pemerintah Kota Dan Daerah Sering
+              Menyelenggrakan Kegiatan Majelis.
+            </p>
+
+            <p>
+              Dengan Kesuburan Kegiatan Tersebut Menjadi Alasan Terbentuknya
+              MAJELIS SEMARANG Untuk Mendukung Dan Membantu Penyebaran Informasi
+              Terkait Kegiatan Majelis Di Wilayah Semarang
+            </p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">Visi</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>Menjadi Media Yang Bermanfaat Bagi Umat</p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">Misi</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>Berusaha Selalu Memberikan Informasi Akurat Dan Tepat</p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">Tujuan</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>• Membagikan Informasi Kebaikan Kepada Pecinta Majelis</p>
+            <p>
+              • Mengajak Para Kaum Muslim Untuk Bersama Hadir Dalam Kegiatan
+              Majelis
+            </p>
+            <p>• Bersama sama Berkhidmat Untuk Kemaslahatan Umat</p>
+            <p>• Ikut Mendukung Dan Mensukseskan Kegiatan Majelis</p>
+            <span class="line"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      let li = document.querySelectorAll(".faq-text li");
+      for (var i = 0; i < li.length; i++) {
+        li[i].addEventListener("click", (e) => {
+          let clickedLi;
+          if (e.target.classList.contains("question-arrow")) {
+            clickedLi = e.target.parentElement;
+          } else {
+            clickedLi = e.target.parentElement.parentElement;
+          }
+          clickedLi.classList.toggle("showAnswer");
+        });
+      }
+    </script>
+  </body>
+</html>
