@@ -289,3 +289,8 @@ section {
     left: 0;
   }
 }
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
