@@ -5,3 +5,8 @@ menu.onclick = () => {
     menu.classList.toggle('bx-x');
     navlinks.classList.toggle('open')
 }
+
+
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
+});
