@@ -145,3 +145,8 @@ body {
     width: 98%;
   }
 }
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
